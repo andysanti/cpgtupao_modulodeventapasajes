@@ -19,9 +19,8 @@ public class COmnibus {
     int cantPisos;
     int cantAsientos; //Cantidad de asientos del bus
     
-    ArrayList<CAsiento> vip;
-    ArrayList<CAsiento> normal;
-    ArrayList<CAsiento> oferta;
+    ArrayList<CAsiento> asiento;
+   
 
     public int getCodigo() {
         return codigo;
@@ -63,42 +62,24 @@ public class COmnibus {
         this.cantAsientos = cantAsientos;
     }
 
-    public ArrayList<CAsiento> getVip() {
-        return vip;
+    public ArrayList<CAsiento> getAsiento() {
+        return asiento;
     }
 
-    public void setVip(ArrayList<CAsiento> vip) {
-        this.vip = vip;
+    public void setAsiento(ArrayList<CAsiento> asiento) {
+        this.asiento = asiento;
     }
-
-    public ArrayList<CAsiento> getNormal() {
-        return normal;
-    }
-
-    public void setNormal(ArrayList<CAsiento> normal) {
-        this.normal = normal;
-    }
-
-    public ArrayList<CAsiento> getOferta() {
-        return oferta;
-    }
-
-    public void setOferta(ArrayList<CAsiento> oferta) {
-        this.oferta = oferta;
-    }
-
     public COmnibus() {
     }
 
-    public COmnibus(int codigo, String placa, String flota, int cantPisos, int cantAsientos, ArrayList<CAsiento> vip, ArrayList<CAsiento> normal, ArrayList<CAsiento> oferta) {
+    public COmnibus(int codigo, String placa, String flota, int cantPisos, int cantAsientos, ArrayList<CAsiento> asiento) {
         this.codigo = codigo;
         this.placa = placa;
         this.flota = flota;
         this.cantPisos = cantPisos;
         this.cantAsientos = cantAsientos;
-        this.vip = vip;
-        this.normal = normal;
-        this.oferta = oferta;
+        this.asiento = asiento;
+        
     }
     
     
