@@ -15,6 +15,7 @@ public class CAsiento {
     String tipo;
     double costo;
     String grados; // 145° . 160° . 180° 
+    private boolean estado; // libre: true, ocupado : false
     
     /** tipo asientos
         Asientos Vip;
@@ -54,16 +55,25 @@ public class CAsiento {
     public void setGrados(String grados) {
         this.grados = grados;
     }
+    
+    public boolean isEstado() {
+        return estado;
+    }
+    
+    public void setEstado(boolean estado) {
+        this.estado = estado;
+    }
 
     public CAsiento() {
     }
 
-    public CAsiento(int nroAsiento, String tipo, double costo, String grados) {
+    public CAsiento(int nroAsiento, String tipo, double costo, String grados,boolean estado) {
         this.nroAsiento = nroAsiento;
         this.tipo = tipo;
         this.costo = costo;
         this.grados = grados;
+        this.estado = estado;
     }
-    
+
     
 }
