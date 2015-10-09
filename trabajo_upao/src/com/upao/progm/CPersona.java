@@ -18,6 +18,7 @@ public class CPersona {
     String sexo;
     String fechaNac;
     String telefono;
+    String email;
 
     public int getCodigo() {
         return codigo;
@@ -75,10 +76,18 @@ public class CPersona {
         this.telefono = telefono;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     public CPersona() {
     }
 
-    public CPersona(int codigo, String dni, String apellidos, String nombres, String sexo, String fechaNac, String telefono) {
+    public CPersona(int codigo, String dni, String apellidos, String nombres, String sexo, String fechaNac, String telefono, String email) {
         this.codigo = codigo;
         this.dni = dni;
         this.apellidos = apellidos;
@@ -86,12 +95,7 @@ public class CPersona {
         this.sexo = sexo;
         this.fechaNac = fechaNac;
         this.telefono = telefono;
+        this.email = email;
     }
-
-    @Override
-    public String toString() {
-        return "Codigo=" + codigo + ", dni=" + dni + ", apellidos=" + apellidos + ", nombres=" + nombres + ", sexo=" + sexo + ", fechaNac=" + fechaNac + ", telefono=" + telefono;
-    }
-    
     
 }

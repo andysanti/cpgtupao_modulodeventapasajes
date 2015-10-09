@@ -33,8 +33,8 @@ public class CTrabajador extends CPersona{
     public CTrabajador() {
     }
 
-    public CTrabajador(String tipo, double sueldo, int codigo, String dni, String apellidos, String nombres, String sexo, String fechaNac, String telefono) {
-        super(codigo, dni, apellidos, nombres, sexo, fechaNac, telefono);
+    public CTrabajador(String tipo, double sueldo, int codigo, String dni, String apellidos, String nombres, String sexo, String fechaNac, String telefono, String email) {
+        super(codigo, dni, apellidos, nombres, sexo, fechaNac, telefono, email);
         this.tipo = tipo;
         this.sueldo = sueldo;
     }

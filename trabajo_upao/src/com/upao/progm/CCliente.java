@@ -25,9 +25,10 @@ public class CCliente extends CPersona{
     public CCliente() {
     }
 
-    public CCliente(boolean menor, int codigo, String dni, String apellidos, String nombres, String sexo, String fechaNac, String telefono) {
-        super(codigo, dni, apellidos, nombres, sexo, fechaNac, telefono);
+    public CCliente(boolean menor, int codigo, String dni, String apellidos, String nombres, String sexo, String fechaNac, String telefono, String email) {
+        super(codigo, dni, apellidos, nombres, sexo, fechaNac, telefono, email);
         this.menor = menor;
     }
+
     
 }
