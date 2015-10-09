@@ -6,6 +6,11 @@
 package com.upao.progm;
 
 import java.awt.Color;
+import java.util.ArrayList;
+import javax.swing.DefaultListModel;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -13,11 +18,39 @@ import java.awt.Color;
  */
 public class JIFVenta extends javax.swing.JInternalFrame {
 
+    
+    static ArrayList<JCheckBox> myCheckBoxs = new  ArrayList<JCheckBox>();
+    
+    static ArrayList<JButton> myButtons= new  ArrayList<JButton>();
+    
     /**
      * Creates new form JIFVenta
      */
     public JIFVenta() {
         initComponents();
+        
+        myCheckBoxs.add(jCheckBox1);myCheckBoxs.add(jCheckBox2);myCheckBoxs.add(jCheckBox3);myCheckBoxs.add(jCheckBox4);
+        myCheckBoxs.add(jCheckBox5);myCheckBoxs.add(jCheckBox6);myCheckBoxs.add(jCheckBox7);myCheckBoxs.add(jCheckBox8);
+        myCheckBoxs.add(jCheckBox9);myCheckBoxs.add(jCheckBox10);myCheckBoxs.add(jCheckBox11);myCheckBoxs.add(jCheckBox12);
+        myCheckBoxs.add(jCheckBox13);myCheckBoxs.add(jCheckBox14);myCheckBoxs.add(jCheckBox15);myCheckBoxs.add(jCheckBox16);
+        myCheckBoxs.add(jCheckBox17);myCheckBoxs.add(jCheckBox18);myCheckBoxs.add(jCheckBox19);myCheckBoxs.add(jCheckBox20);
+        myCheckBoxs.add(jCheckBox21);myCheckBoxs.add(jCheckBox22);myCheckBoxs.add(jCheckBox23);myCheckBoxs.add(jCheckBox24);
+        myCheckBoxs.add(jCheckBox25);myCheckBoxs.add(jCheckBox26);myCheckBoxs.add(jCheckBox27);myCheckBoxs.add(jCheckBox28);
+        myCheckBoxs.add(jCheckBox29);myCheckBoxs.add(jCheckBox30);myCheckBoxs.add(jCheckBox31);myCheckBoxs.add(jCheckBox32);
+        myCheckBoxs.add(jCheckBox33);myCheckBoxs.add(jCheckBox34);myCheckBoxs.add(jCheckBox35);myCheckBoxs.add(jCheckBox36);
+        myCheckBoxs.add(jCheckBox37);myCheckBoxs.add(jCheckBox38);myCheckBoxs.add(jCheckBox39);myCheckBoxs.add(jCheckBox40);
+        
+        myButtons.add(jButton1);myButtons.add(jButton2);myButtons.add(jButton3);myButtons.add(jButton4);
+        myButtons.add(jButton5);myButtons.add(jButton6);myButtons.add(jButton7);myButtons.add(jButton8);
+        myButtons.add(jButton9);myButtons.add(jButton10);myButtons.add(jButton11);myButtons.add(jButton12);
+        myButtons.add(jButton13);myButtons.add(jButton14);myButtons.add(jButton15);myButtons.add(jButton16);
+        myButtons.add(jButton17);myButtons.add(jButton18);myButtons.add(jButton19);myButtons.add(jButton20);
+        myButtons.add(jButton21);myButtons.add(jButton22);myButtons.add(jButton23);myButtons.add(jButton24);
+        myButtons.add(jButton25);myButtons.add(jButton26);myButtons.add(jButton27);myButtons.add(jButton28);
+        myButtons.add(jButton29);myButtons.add(jButton30);myButtons.add(jButton31);myButtons.add(jButton32);
+        myButtons.add(jButton33);myButtons.add(jButton34);myButtons.add(jButton35);myButtons.add(jButton36);
+        myButtons.add(jButton37);myButtons.add(jButton38);myButtons.add(jButton39);myButtons.add(jButton40);
+        
     }
 
     /**
@@ -136,85 +169,323 @@ public class JIFVenta extends javax.swing.JInternalFrame {
             }
         });
 
+        jButton1.setBackground(new java.awt.Color(153, 255, 0));
         jButton1.setText("     1    ");
 
+        jButton2.setBackground(new java.awt.Color(153, 255, 0));
         jButton2.setText("    2     ");
 
+        jCheckBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox2ActionPerformed(evt);
+            }
+        });
+
+        jButton3.setBackground(new java.awt.Color(153, 255, 0));
         jButton3.setText("     3    ");
         jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
+        jCheckBox3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox3ActionPerformed(evt);
+            }
+        });
+
+        jCheckBox5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox5ActionPerformed(evt);
+            }
+        });
+
         jButton5.setText("     5    ");
+
+        jCheckBox6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox6ActionPerformed(evt);
+            }
+        });
 
         jButton6.setText("    6     ");
 
+        jCheckBox7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox7ActionPerformed(evt);
+            }
+        });
+
         jButton7.setText("     7    ");
+
+        jCheckBox8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox8ActionPerformed(evt);
+            }
+        });
 
         jButton8.setText("     8    ");
 
+        jCheckBox9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox9ActionPerformed(evt);
+            }
+        });
+
         jButton9.setText("     9    ");
+
+        jCheckBox10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox10ActionPerformed(evt);
+            }
+        });
 
         jButton10.setText("   10    ");
 
+        jCheckBox11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox11ActionPerformed(evt);
+            }
+        });
+
         jButton11.setText("    11   ");
+
+        jCheckBox12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox12ActionPerformed(evt);
+            }
+        });
 
         jButton12.setText("    12   ");
 
+        jCheckBox13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox13ActionPerformed(evt);
+            }
+        });
+
         jButton13.setText("    13   ");
+
+        jCheckBox14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox14ActionPerformed(evt);
+            }
+        });
 
         jButton14.setText("    14   ");
 
+        jCheckBox15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox15ActionPerformed(evt);
+            }
+        });
+
         jButton15.setText("    15   ");
+
+        jCheckBox16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox16ActionPerformed(evt);
+            }
+        });
 
         jButton16.setText("    16   ");
 
+        jCheckBox17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox17ActionPerformed(evt);
+            }
+        });
+
         jButton17.setText("    17   ");
+
+        jCheckBox18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox18ActionPerformed(evt);
+            }
+        });
 
         jButton18.setText("    18   ");
 
+        jCheckBox19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox19ActionPerformed(evt);
+            }
+        });
+
         jButton19.setText("    19   ");
+
+        jCheckBox20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox20ActionPerformed(evt);
+            }
+        });
 
         jButton20.setText("    20   ");
 
+        jCheckBox21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox21ActionPerformed(evt);
+            }
+        });
+
         jButton21.setText("    21   ");
+
+        jCheckBox22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox22ActionPerformed(evt);
+            }
+        });
 
         jButton22.setText("    22   ");
 
+        jCheckBox23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox23ActionPerformed(evt);
+            }
+        });
+
         jButton23.setText("    23   ");
+
+        jCheckBox24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox24ActionPerformed(evt);
+            }
+        });
 
         jButton24.setText("    24   ");
 
+        jCheckBox25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox25ActionPerformed(evt);
+            }
+        });
+
         jButton25.setText("    25   ");
+
+        jCheckBox26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox26ActionPerformed(evt);
+            }
+        });
 
         jButton26.setText("    26   ");
 
+        jCheckBox27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox27ActionPerformed(evt);
+            }
+        });
+
         jButton27.setText("    27   ");
+
+        jCheckBox28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox28ActionPerformed(evt);
+            }
+        });
 
         jButton28.setText("    28   ");
 
+        jCheckBox29.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox29ActionPerformed(evt);
+            }
+        });
+
         jButton29.setText("    29   ");
+
+        jCheckBox30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox30ActionPerformed(evt);
+            }
+        });
 
         jButton30.setText("    30   ");
 
+        jCheckBox31.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox31ActionPerformed(evt);
+            }
+        });
+
         jButton31.setText("    31   ");
+
+        jCheckBox32.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox32ActionPerformed(evt);
+            }
+        });
 
         jButton32.setText("    32   ");
 
+        jCheckBox33.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox33ActionPerformed(evt);
+            }
+        });
+
         jButton33.setText("    33   ");
+
+        jCheckBox34.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox34ActionPerformed(evt);
+            }
+        });
 
         jButton34.setText("    34   ");
 
+        jCheckBox35.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox35ActionPerformed(evt);
+            }
+        });
+
         jButton35.setText("    35   ");
+
+        jCheckBox36.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox36ActionPerformed(evt);
+            }
+        });
 
         jButton36.setText("    36   ");
 
+        jCheckBox37.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox37ActionPerformed(evt);
+            }
+        });
+
         jButton37.setText("    37   ");
+
+        jCheckBox38.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox38ActionPerformed(evt);
+            }
+        });
 
         jButton38.setText("    38   ");
 
+        jCheckBox39.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox39ActionPerformed(evt);
+            }
+        });
+
         jButton39.setText("    39   ");
+
+        jCheckBox40.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox40ActionPerformed(evt);
+            }
+        });
 
         jButton40.setText("    40   ");
 
+        jCheckBox4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox4ActionPerformed(evt);
+            }
+        });
+
+        jButton4.setBackground(new java.awt.Color(153, 255, 0));
         jButton4.setText("     4    ");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -537,11 +808,6 @@ public class JIFVenta extends javax.swing.JInternalFrame {
 
         jLabel6.setText("DNI");
 
-        jList1.setModel(new javax.swing.AbstractListModel() {
-            String[] strings = { "-" };
-            public int getSize() { return strings.length; }
-            public Object getElementAt(int i) { return strings[i]; }
-        });
         jScrollPane1.setViewportView(jList1);
 
         jButton41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/upao/resources/Guardar.gif"))); // NOI18N
@@ -662,6 +928,19 @@ public class JIFVenta extends javax.swing.JInternalFrame {
     //Guardar
     private void jButton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton41ActionPerformed
         // TODO add your handling code here:
+        // TODO add your handling code here:
+        try{
+            ArrayList<CCliente> lta=  JFPrincipal.dataClientes.ObtenerClientes();
+
+            DefaultListModel modelo = new DefaultListModel();
+            for(int i = 0; i<lta.size(); i++){
+                    modelo.addElement(lta.get(i));
+            }        
+            jList1.setModel(modelo);
+        }
+        catch(Exception ex){
+             JOptionPane.showMessageDialog(null, "Ha ocurrido un error. Mensaje: "+ex.getMessage(),"Error", 0);
+        }
     }//GEN-LAST:event_jButton41ActionPerformed
 
     //Salir
@@ -674,15 +953,331 @@ public class JIFVenta extends javax.swing.JInternalFrame {
     //Buscar
     private void jButton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton43ActionPerformed
         // TODO add your handling code here:
+        //String busq = jTextField1.getText();
+        
+        CCliente selected = (CCliente)jList1.getSelectedValue();
+        JOptionPane.showMessageDialog(null, "Operación : "+selected);
     }//GEN-LAST:event_jButton43ActionPerformed
 
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code here:    
         if (jCheckBox1.isSelected()==true) {
             jButton1.setBackground(Color.red);
         }
         else jButton1.setBackground(null);
     }//GEN-LAST:event_jCheckBox1ActionPerformed
+
+    private void jCheckBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox2ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox2.isSelected()==true) {
+            jButton2.setBackground(Color.red);
+        }
+        else jButton2.setBackground(null);
+    }//GEN-LAST:event_jCheckBox2ActionPerformed
+
+    private void jCheckBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox3ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox3.isSelected()==true) {
+            jButton3.setBackground(Color.red);
+        }
+        else jButton3.setBackground(null);
+    }//GEN-LAST:event_jCheckBox3ActionPerformed
+
+    private void jCheckBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox4ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox4.isSelected()==true) {
+            jButton4.setBackground(Color.red);
+        }
+        else jButton4.setBackground(null);
+    }//GEN-LAST:event_jCheckBox4ActionPerformed
+
+    private void jCheckBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox5ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox5.isSelected()==true) {
+            jButton5.setBackground(Color.red);
+        }
+        else jButton5.setBackground(null);
+    }//GEN-LAST:event_jCheckBox5ActionPerformed
+
+    private void jCheckBox6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox6ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox6.isSelected()==true) {
+            jButton6.setBackground(Color.red);
+        }
+        else jButton6.setBackground(null);
+    }//GEN-LAST:event_jCheckBox6ActionPerformed
+
+    private void jCheckBox7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox7ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox7.isSelected()==true) {
+            jButton7.setBackground(Color.red);
+        }
+        else jButton7.setBackground(null);
+    }//GEN-LAST:event_jCheckBox7ActionPerformed
+
+    private void jCheckBox8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox8ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox8.isSelected()==true) {
+            jButton8.setBackground(Color.red);
+        }
+        else jButton8.setBackground(null);
+    }//GEN-LAST:event_jCheckBox8ActionPerformed
+
+    private void jCheckBox9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox9ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox9.isSelected()==true) {
+            jButton9.setBackground(Color.red);
+        }
+        else jButton9.setBackground(null);
+    }//GEN-LAST:event_jCheckBox9ActionPerformed
+
+    private void jCheckBox10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox10ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox10.isSelected()==true) {
+            jButton10.setBackground(Color.red);
+        }
+        else jButton10.setBackground(null);
+    }//GEN-LAST:event_jCheckBox10ActionPerformed
+
+    private void jCheckBox11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox11ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox11.isSelected()==true) {
+            jButton11.setBackground(Color.red);
+        }
+        else jButton11.setBackground(null);
+    }//GEN-LAST:event_jCheckBox11ActionPerformed
+
+    private void jCheckBox12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox12ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox12.isSelected()==true) {
+            jButton12.setBackground(Color.red);
+        }
+        else jButton12.setBackground(null);
+    }//GEN-LAST:event_jCheckBox12ActionPerformed
+
+    private void jCheckBox13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox13ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox13.isSelected()==true) {
+            jButton13.setBackground(Color.red);
+        }
+        else jButton13.setBackground(null);
+    }//GEN-LAST:event_jCheckBox13ActionPerformed
+
+    private void jCheckBox14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox14ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox14.isSelected()==true) {
+            jButton14.setBackground(Color.red);
+        }
+        else jButton14.setBackground(null);
+    }//GEN-LAST:event_jCheckBox14ActionPerformed
+
+    private void jCheckBox15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox15ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox15.isSelected()==true) {
+            jButton15.setBackground(Color.red);
+        }
+        else jButton15.setBackground(null);
+    }//GEN-LAST:event_jCheckBox15ActionPerformed
+
+    private void jCheckBox16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox16ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox16.isSelected()==true) {
+            jButton16.setBackground(Color.red);
+        }
+        else jButton16.setBackground(null);
+    }//GEN-LAST:event_jCheckBox16ActionPerformed
+
+    private void jCheckBox17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox17ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox17.isSelected()==true) {
+            jButton17.setBackground(Color.red);
+        }
+        else jButton17.setBackground(null);
+    }//GEN-LAST:event_jCheckBox17ActionPerformed
+
+    private void jCheckBox18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox18ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox18.isSelected()==true) {
+            jButton18.setBackground(Color.red);
+        }
+        else jButton18.setBackground(null);
+    }//GEN-LAST:event_jCheckBox18ActionPerformed
+
+    private void jCheckBox19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox19ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox19.isSelected()==true) {
+            jButton19.setBackground(Color.red);
+        }
+        else jButton19.setBackground(null);
+    }//GEN-LAST:event_jCheckBox19ActionPerformed
+
+    private void jCheckBox20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox20ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox20.isSelected()==true) {
+            jButton20.setBackground(Color.red);
+        }
+        else jButton20.setBackground(null);
+    }//GEN-LAST:event_jCheckBox20ActionPerformed
+
+    private void jCheckBox21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox21ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox21.isSelected()==true) {
+            jButton21.setBackground(Color.red);
+        }
+        else jButton21.setBackground(null);
+    }//GEN-LAST:event_jCheckBox21ActionPerformed
+
+    private void jCheckBox22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox22ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox22.isSelected()==true) {
+            jButton22.setBackground(Color.red);
+        }
+        else jButton22.setBackground(null);
+    }//GEN-LAST:event_jCheckBox22ActionPerformed
+
+    private void jCheckBox23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox23ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox23.isSelected()==true) {
+            jButton23.setBackground(Color.red);
+        }
+        else jButton23.setBackground(null);
+    }//GEN-LAST:event_jCheckBox23ActionPerformed
+
+    private void jCheckBox24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox24ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox24.isSelected()==true) {
+            jButton24.setBackground(Color.red);
+        }
+        else jButton24.setBackground(null);
+    }//GEN-LAST:event_jCheckBox24ActionPerformed
+
+    private void jCheckBox25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox25ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox25.isSelected()==true) {
+            jButton25.setBackground(Color.red);
+        }
+        else jButton25.setBackground(null);
+    }//GEN-LAST:event_jCheckBox25ActionPerformed
+
+    private void jCheckBox26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox26ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox26.isSelected()==true) {
+            jButton26.setBackground(Color.red);
+        }
+        else jButton26.setBackground(null);
+    }//GEN-LAST:event_jCheckBox26ActionPerformed
+
+    private void jCheckBox27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox27ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox27.isSelected()==true) {
+            jButton27.setBackground(Color.red);
+        }
+        else jButton27.setBackground(null);
+    }//GEN-LAST:event_jCheckBox27ActionPerformed
+
+    private void jCheckBox28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox28ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox28.isSelected()==true) {
+            jButton28.setBackground(Color.red);
+        }
+        else jButton28.setBackground(null);
+    }//GEN-LAST:event_jCheckBox28ActionPerformed
+
+    private void jCheckBox29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox29ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox29.isSelected()==true) {
+            jButton29.setBackground(Color.red);
+        }
+        else jButton29.setBackground(null);
+    }//GEN-LAST:event_jCheckBox29ActionPerformed
+
+    private void jCheckBox30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox30ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox30.isSelected()==true) {
+            jButton30.setBackground(Color.red);
+        }
+        else jButton30.setBackground(null);
+    }//GEN-LAST:event_jCheckBox30ActionPerformed
+
+    private void jCheckBox31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox31ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox31.isSelected()==true) {
+            jButton31.setBackground(Color.red);
+        }
+        else jButton31.setBackground(null);
+    }//GEN-LAST:event_jCheckBox31ActionPerformed
+
+    private void jCheckBox32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox32ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox32.isSelected()==true) {
+            jButton32.setBackground(Color.red);
+        }
+        else jButton32.setBackground(null);
+    }//GEN-LAST:event_jCheckBox32ActionPerformed
+
+    private void jCheckBox33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox33ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox33.isSelected()==true) {
+            jButton33.setBackground(Color.red);
+        }
+        else jButton33.setBackground(null);
+    }//GEN-LAST:event_jCheckBox33ActionPerformed
+
+    private void jCheckBox34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox34ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox34.isSelected()==true) {
+            jButton34.setBackground(Color.red);
+        }
+        else jButton34.setBackground(null);
+    }//GEN-LAST:event_jCheckBox34ActionPerformed
+
+    private void jCheckBox35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox35ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox35.isSelected()==true) {
+            jButton35.setBackground(Color.red);
+        }
+        else jButton35.setBackground(null);
+    }//GEN-LAST:event_jCheckBox35ActionPerformed
+
+    private void jCheckBox36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox36ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox36.isSelected()==true) {
+            jButton36.setBackground(Color.red);
+        }
+        else jButton36.setBackground(null);
+    }//GEN-LAST:event_jCheckBox36ActionPerformed
+
+    private void jCheckBox37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox37ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox37.isSelected()==true) {
+            jButton37.setBackground(Color.red);
+        }
+        else jButton37.setBackground(null);
+    }//GEN-LAST:event_jCheckBox37ActionPerformed
+
+    private void jCheckBox38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox38ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox38.isSelected()==true) {
+            jButton38.setBackground(Color.red);
+        }
+        else jButton38.setBackground(null);
+    }//GEN-LAST:event_jCheckBox38ActionPerformed
+
+    private void jCheckBox39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox39ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox39.isSelected()==true) {
+            jButton39.setBackground(Color.red);
+        }
+        else jButton39.setBackground(null);
+    }//GEN-LAST:event_jCheckBox39ActionPerformed
+
+    private void jCheckBox40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox40ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox40.isSelected()==true) {
+            jButton40.setBackground(Color.red);
+        }
+        else jButton40.setBackground(null);
+    }//GEN-LAST:event_jCheckBox40ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

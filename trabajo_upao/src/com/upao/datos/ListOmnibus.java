@@ -19,7 +19,7 @@ public class ListOmnibus{
 
     public ListOmnibus() {
         this.listaomnibus=new ArrayList<>();
-         LIstAsientos asientos =new LIstAsientos();
+        LIstAsientos asientos =new LIstAsientos();
         asientos.ObtenerAsientos();
  
          COmnibus bus = new COmnibus(1,"NB-8012","Bus Suite",1,50,asientos.ObtenerAsientos());
