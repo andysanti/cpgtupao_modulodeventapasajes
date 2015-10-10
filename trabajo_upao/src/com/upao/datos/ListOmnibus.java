@@ -15,7 +15,7 @@ import java.util.List;
  * @author Victor Ramirez
  */
 public class ListOmnibus{
-    private final ArrayList<COmnibus> listaomnibus;
+    private ArrayList<COmnibus> listaomnibus;
 
     public ListOmnibus() {
         this.listaomnibus=new ArrayList<>();
@@ -33,11 +33,11 @@ public class ListOmnibus{
          
   
     }
-    public List<COmnibus> ObtenerOmnibuses(){
+    public ArrayList<COmnibus> ObtenerOmnibuses(){
        
         return listaomnibus;
     }
-    public void AgregarCliente(COmnibus om){
+    public void AgregarOmnibus(COmnibus om){
         if(om!=null)
         listaomnibus.add(om);  
     }
@@ -62,5 +62,13 @@ public class ListOmnibus{
      //Elimina el obj de la Coleccion mediante su indice
     public void eliminarOmnibus(int indice) {
          listaomnibus.remove(indice);//Elimina x indice
+    }
+    
+    public int ObtnerUltimoCodigo() {
+        
+        int tamanio = listaomnibus.size();
+        tamanio = tamanio - 1;
+        
+        return listaomnibus.get(tamanio).getCodigo();
     }
 }

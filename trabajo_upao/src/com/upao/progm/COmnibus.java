@@ -81,6 +81,12 @@ public class COmnibus {
         this.asiento = asiento;
         
     }
+
+    @Override
+    public String toString() {
+        return "Codigo=" + codigo + "- "+ flota +" con Placa " + placa + ", " + cantPisos + " pisos y " + cantAsientos + " asientos";
+    }
+    
     
     
 }

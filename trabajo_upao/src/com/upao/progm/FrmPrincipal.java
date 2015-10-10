@@ -47,7 +47,7 @@ public abstract  class  FrmPrincipal extends javax.swing.JFrame {
                     i++;
                     progreso.setValue(i);
                     try {
-                        sleep(100);
+                        sleep(1);
                     } catch (Exception e) {
                         e.printStackTrace();
                     }

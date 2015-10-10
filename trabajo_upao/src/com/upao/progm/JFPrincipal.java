@@ -7,6 +7,7 @@ package com.upao.progm;
 
 import com.upao.datos.*;
 import java.util.ArrayList;
+import javax.swing.DefaultListModel;
 import javax.swing.JOptionPane;
 
 /**
@@ -15,10 +16,13 @@ import javax.swing.JOptionPane;
  */
 public class JFPrincipal extends javax.swing.JFrame {
     
-    static Listclientes dataClientes = new Listclientes();
-    static ListOmnibus dataOmnibus = new ListOmnibus();
-    static ListTrabajador dataTrabajador = new ListTrabajador();
     static LIstAsientos dataAsientos = new LIstAsientos();
+    static ListItinerario dataItinerario = new ListItinerario();
+    static ListOmnibus dataOmnibus = new ListOmnibus();
+    static ListServicio dataServicio= new ListServicio();
+    static ListTrabajador dataTrabajador = new ListTrabajador();
+    static ListVenta dataVenta = new ListVenta();
+    static Listclientes dataClientes = new Listclientes();
     
     
     /**
@@ -92,17 +96,32 @@ public class JFPrincipal extends javax.swing.JFrame {
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setResizable(false);
 
-        jButton7.setText("Horas");
+        jDesktopPane1.setBackground(new java.awt.Color(36, 145, 175));
+        jDesktopPane1.setForeground(java.awt.SystemColor.activeCaption);
 
-        jButton8.setText("Buses");
+        jButton7.setText("Itinerarios");
 
-        jButton9.setText("Salidas");
+        jButton8.setText("Servicios");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+
+        jButton9.setText("Bus");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
 
         jScrollPane1.setViewportView(jList1);
 
         jScrollPane2.setViewportView(jList2);
 
         jScrollPane3.setViewportView(jList3);
+
+        jPanel1.setBackground(new java.awt.Color(135, 193, 211));
 
         jLabel4.setText("Fecha");
 
@@ -150,6 +169,8 @@ public class JFPrincipal extends javax.swing.JFrame {
                 .addGap(41, 41, 41))
         );
 
+        jPanel2.setBackground(new java.awt.Color(135, 193, 211));
+
         jLabel2.setText("Usuario");
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -176,6 +197,8 @@ public class JFPrincipal extends javax.swing.JFrame {
                 .addContainerGap(23, Short.MAX_VALUE))
         );
 
+        jPanel3.setBackground(new java.awt.Color(135, 193, 211));
+
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setText("AROSWIT");
 
@@ -195,6 +218,8 @@ public class JFPrincipal extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addContainerGap())
         );
+
+        jPanel4.setBackground(new java.awt.Color(135, 193, 211));
 
         jButton4.setText("Encomiendas");
 
@@ -246,6 +271,8 @@ public class JFPrincipal extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPanel5.setBackground(new java.awt.Color(135, 193, 211));
+
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
@@ -282,16 +309,16 @@ public class JFPrincipal extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(jDesktopPane1Layout.createSequentialGroup()
                                 .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 224, Short.MAX_VALUE)
-                                    .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 311, Short.MAX_VALUE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
                                 .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 268, Short.MAX_VALUE)
-                                    .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE)
+                                    .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(64, 64, 64)
                                 .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jButton9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 218, Short.MAX_VALUE))
+                                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                                    .addComponent(jButton9, javax.swing.GroupLayout.DEFAULT_SIZE, 159, Short.MAX_VALUE))
                                 .addGap(25, 25, 25)))
                         .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -429,6 +456,22 @@ public class JFPrincipal extends javax.swing.JFrame {
         //Centrar el obj JInternalFrame dentro del JFrame
         centrar(oJIFO);
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // TODO add your handling code here:
+        ArrayList<COmnibus> lta = dataOmnibus.ObtenerOmnibuses();
+        
+        DefaultListModel modelo = new DefaultListModel();
+        for(int i = 0; i<lta.size(); i++){
+                modelo.addElement(lta.get(i).getCodigo()+" - "+lta.get(i).getFlota()+" de "+lta.get(i).getCantPisos()+" pisos");
+        }        
+        jList3.setModel(modelo);
+    }//GEN-LAST:event_jButton9ActionPerformed
 
     /**
      * @param args the command line arguments
