@@ -205,6 +205,11 @@ public class JFPrincipal extends javax.swing.JFrame {
         jButton2.setText("Asignar al Chofer");
 
         jButton3.setText("Agregar Buses");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton1.setText("Agregar Salidas");
 
@@ -411,6 +416,19 @@ public class JFPrincipal extends javax.swing.JFrame {
         if(res==JOptionPane.YES_NO_OPTION)
             System.exit(0); //Cierra la ventana actual y demas q estan detras
     }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    //Buses
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        // Se crea un obj de la clase
+        JIFOmnibus oJIFO= new JIFOmnibus();
+        //Se agrega el obj al componente DesktopPane
+        jDesktopPane1.add(oJIFO);
+        //Se muestra el obj.
+        oJIFO.setVisible(true);
+        //Centrar el obj JInternalFrame dentro del JFrame
+        centrar(oJIFO);
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
