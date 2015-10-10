@@ -20,9 +20,11 @@ public class ListItinerario {
         
 
         CItinerario itinerario=new CItinerario(1,"PIURA","LIMA","09-10-2015","10-10-2015","18:30","10:00",14,servicios.ObtenerServicios().get(0));
+        listaItinerario.add(itinerario);
         CItinerario itinerario2=new CItinerario(2,"LIMA","PIURA","10-10-2015","11-10-2015","20:30","12:00",14,servicios.ObtenerServicios().get(1));
+        listaItinerario.add(itinerario2);
         CItinerario itinerario3=new CItinerario(3,"PIURA","LIMA","09-10-2015","10-10-2015","19:30","11:00",14,servicios.ObtenerServicios().get(2));
-        
+        listaItinerario.add(itinerario3);
          
     }
     public ArrayList<CItinerario> ObtenerItinerarios(){
