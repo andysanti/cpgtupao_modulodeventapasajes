@@ -10,7 +10,7 @@ package com.upao.progm;
  * @author Victor Ramirez
  */
 public class CVenta {
-    
+    private int codigo;
     CItinerario itinerario;
     CCliente cliente;
     String fechaVenta;
@@ -56,18 +56,23 @@ public class CVenta {
     public void setTotal(double Total) {
         this.Total = Total;
     }
+     public int getCodigo() {
+        return codigo;
+    }
 
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
     public CVenta() {
     }
 
-    public CVenta(CItinerario itinerario, CCliente cliente, String fechaVenta, boolean reserva, double Total) {
+    public CVenta(int codigo,CItinerario itinerario, CCliente cliente, String fechaVenta, boolean reserva, double Total) {
+        this.codigo=codigo;
         this.itinerario = itinerario;
         this.cliente = cliente;
         this.fechaVenta = fechaVenta;
         this.reserva = reserva;
         this.Total = Total;
     }
-    
-    
-    
+   
 }

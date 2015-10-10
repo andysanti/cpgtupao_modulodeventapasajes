@@ -32,5 +32,30 @@ public class ListItinerario {
         
         return listaItinerario;
     }
-    
+    public void AgregarItinerario(CItinerario om){
+        if(om!=null)
+        listaItinerario.add(om);  
+    }
+    public CItinerario BuscarItinerarioByCodigo(int id){
+        CItinerario cli=new CItinerario();
+        for(int i=0;i<listaItinerario.size();i++){
+            if(listaItinerario.get(i).getCodigo()==id){
+                cli = listaItinerario.get(i);
+                break;
+            }                
+        }
+        return cli;
+    }
+     public boolean modificarItinerario(int indice, CItinerario cu) {
+        if(cu!=null) {
+            listaItinerario.set(indice, cu);//Modifica en la Coleccion
+            return true;
+        }
+        else
+            return false;
+    }
+     //Elimina el obj de la Coleccion mediante su indice
+    public void eliminarItinerario(int indice) {
+         listaItinerario.remove(indice);//Elimina x indice
+    }
 }
