@@ -45,4 +45,17 @@ public class Listclientes {
         }
         return cli;
     }
+     public boolean modificarCliente(int indice, CCliente cu) {
+        if(cu!=null) {
+            clientes.set(indice, cu);//Modifica en la Coleccion
+            return true;
+        }
+        else
+            return false;
+    }
+     //Elimina el obj de la Coleccion mediante su indice
+    public void eliminarCliente(int indice) {
+         clientes.remove(indice);//Elimina x indice
+    }
+    
 }
